@@ -4,15 +4,14 @@ public class Main {
     public static int count = 0;
     public static int numberUser = 0;
     public static int maxUser = 10;
-    public static User listUser[] = new User[maxUser];
+    public static User[] listUser = new User[maxUser];
 
-    public static User[] addListUser(User tempUser){
+    public static void addListUser(User tempUser){
         listUser [numberUser] = tempUser;
         numberUser++;
-        return listUser;
     }
 
-    public static void info(User users[]){
+    public static void info(){
 
         for(int i = 0; i < numberUser; i++){
             count++;
@@ -32,7 +31,7 @@ public class Main {
         addListUser(user3);
 
 
-        info(listUser);
+        info();
 
 
     }
