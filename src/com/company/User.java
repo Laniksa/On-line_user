@@ -24,11 +24,11 @@ public class User {
     }
 
     public static String toString(User user){
-        return "on-line пользователь: " +
-                "Номер:" + Main.count +
-                "Имя: " + user.getName() +
-                "Фамилия: " + user.getSurname() +
-                "Email: " + user.getEmail();
+        return "on-line пользователь: " +"\n"+
+                "Номер:" + Main.count +"\n"+
+                "Имя: " + user.getName() +"\n"+
+                "Фамилия: " + user.getSurname() +"\n"+
+                "Email: " + user.getEmail()+"\n";
     }
 
 }
