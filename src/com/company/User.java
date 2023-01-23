@@ -13,9 +13,10 @@ public class User {
 
     public String toString(){
         return "on-line пользователь: " +
-                "имя: " + name +
-                "фамилия: " + surname +
-                "email: " + email;
+                "Номер:"+Main.count +
+                "Имя: " + name +
+                "Фамилия: " + surname +
+                "Email: " + email;
     }
 
 }
