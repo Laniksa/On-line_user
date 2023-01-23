@@ -11,12 +11,24 @@ public class User {
         this.email = email;
     }
 
-    public String toString(){
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public static String toString(User user){
         return "on-line пользователь: " +
-                "Номер:"+Main.count +
-                "Имя: " + name +
-                "Фамилия: " + surname +
-                "Email: " + email;
+                "Номер:" + Main.count +
+                "Имя: " + user.getName() +
+                "Фамилия: " + user.getSurname() +
+                "Email: " + user.getEmail();
     }
 
 }
